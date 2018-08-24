@@ -1,0 +1,6 @@
+---
+- name: instalando jenkins
+  hosts: automation
+  remote_user: root
+  roles:
+   - jenkins

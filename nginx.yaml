@@ -1,0 +1,6 @@
+---
+- name: instalando nginx
+  hosts: docker
+  remote_user: root
+  roles:
+   - nginx

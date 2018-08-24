@@ -1,0 +1,13 @@
+- name: criando dependencias para o bg deploy
+  hosts: docker
+  tasks:
+    - name: instalando dependencia para executar container com ansible
+      package:
+        name: python-pip
+    - name: instalando o docker-py
+      pip: 
+        name: docker-py
+    - name: instalando o docker-ce
+      package: 
+        name: docker-ce
+        state: present

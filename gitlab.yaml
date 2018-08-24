@@ -1,0 +1,4 @@
+- name: instalando o gitlab
+  hosts: devops
+  roles:
+   - gitlab

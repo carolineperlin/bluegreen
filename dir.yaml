@@ -1,0 +1,10 @@
+- name: criando os diretorios para os volumes estaticos do docker
+  hosts: docker
+  tasks:
+   - name: criando diretorio blue e diretorio green
+     file:
+       path: "{{item}}"
+       state: directory
+     with_items:
+       - /blue
+       - /green
